@@ -1,0 +1,23 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "title": "Web Development",
+        "price": "Lorem ipsum dolor sit ",
+        "imageUrl": "https://preview.colorlib.com/theme/itlock/assets/img/gallery/blog4.jpg"
+        
+      },
+      {
+        "id": 2,
+        "title": "Digital Media",
+        "desc": "Lorem ipsum dolor sit amet, consect et adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
+        "imageUrl": "https://preview.colorlib.com/theme/itlock/assets/img/gallery/blog5.jpg"
+      },
+      {
+        "id": 3,
+        "title": "Online Marketing",
+        "desc": "Lorem ipsum dolor sit amet, consect et adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
+        "imageUrl": "https://preview.colorlib.com/theme/itlock/assets/img/gallery/blog6.jpg"
+      }
+    ]
+  }

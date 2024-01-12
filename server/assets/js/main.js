@@ -1,20 +1,26 @@
 const productCardLists = document.querySelector(".product-card-lists");
-const BASE_URL = ` //localhost:8000`;
+// const BASE_URL = `http://localhost:8080`;
+
+// function setProductToLocaleStorage(favs) {
+//   localStorage.setItem("favs", JSON.stringify(favs));
+// }
+
+// function getFavsFromLocaleStorage() {
+//   return JSON.parse(localStorage.getItem("favs")) || [];
+// }
+
 let favProducts = getFavsFromLocaleStorage();
 let products = [];
 async function getAllProducts() {
   try {
     const res = await axios(`${BASE_URL}/products`);
-   
     products = res.data;
     drawProductCards(res.data);
   } catch (error) {
     console.log(error);
   }
-  getAllProducts();
 }
-
-
+getAllProducts();
 
 function drawProductCards(data) {
   productCardLists.innerHTML = "";
@@ -39,17 +45,19 @@ function drawProductCards(data) {
     </p>
     <div class="icons">
     <i class="${
-        favProducts.find((item) => item.id === element.id)
-          ? "fa-solid fa-heart"
-          : "fa-regular fa-heart"
-      }" onclick="addToFavs(${element.id},this)"></i>
+      favProducts.find((item) => item.id === element.id)
+        ? "fa-solid fa-heart"
+        : "fa-regular fa-heart"
+    }" onclick="addToFavs(${element.id},this)"></i>
 
       <div class="delete-icon" onclick="deleteProduct(${
         element.id
       },this)"><i class="fa-solid fa-trash"></i></div>
       <i class="fa-solid fa-pen-nib"></i>
 
-      <a href="details.html?id=${element.id}" class="details"><i class="fa-solid fa-eye"></i></a>
+      <a href="details.html?id=${
+        element.id
+      }" class="details"><i class="fa-solid fa-eye"></i></a>
     </div>
   </div>
     `;
@@ -59,7 +67,6 @@ function drawProductCards(data) {
 }
 
 async function deleteProduct(id, btn) {
-
   try {
     if (window.confirm("r u sure to delete product??")) {
       await axios.delete(`${BASE_URL}/products/${id}`);
@@ -71,8 +78,6 @@ async function deleteProduct(id, btn) {
 }
 
 function addToFavs(id, icon) {
-  
-
   if (icon.className === "fa-solid fa-heart") {
     icon.className = "fa-regular fa-heart";
   } else {
