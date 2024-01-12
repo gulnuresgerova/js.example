@@ -115,8 +115,11 @@ header {
             li {
               a {
                 text-decoration: none;
-                color: white;
+                color: rgb(143, 140, 140);
                 font-size: 1.2rem;
+                &:hover {
+                 color: white;
+                }
               }
             }
           }
@@ -432,6 +435,66 @@ footer {
           color: red;
         }
       }
+    }
+  }
+}
+
+
+// form section
+
+#add-product {
+  padding-top: 130px;
+  .add-product-head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -64px;
+    margin-bottom: 30px;
+  }
+  .add-product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    form {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      input {
+        color: #497011;
+        outline: none;
+        width: 330px;
+        height: 40px;
+        border: 1px solid #7cbd1e;
+        padding: 0 10px;
+        border-radius: 10px;
+        &::placeholder {
+          color: #7cbd1e;
+        }
+      }
+      button {
+        height: 40px;
+        width: 100px;
+        border: none;
+      }
+
+      .green {
+        background-color: #7cbd1e;
+        color: white;
+        border-radius: 7px;
+        &:hover {
+          background-color: #497011;
+        }
+      }
+    }
+    .error-message {
+      margin: 2rem 0;
+      font-size: 2rem;
+      color: red;
+      opacity: 0;
+      transition: all 1s;
     }
   }
 }

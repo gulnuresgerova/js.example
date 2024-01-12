@@ -115,8 +115,11 @@ header .container .header-top .head-right .head .head-mini em {
 }
 #header-bootom .container .header-bootom .header-bottom-left nav ul li a {
   text-decoration: none;
-  color: white;
+  color: rgb(143, 140, 140);
   font-size: 1.2rem;
+}
+#header-bootom .container .header-bootom .header-bottom-left nav ul li a:hover {
+  color: white;
 }
 
 #hero-banner .hero-banner .carousel .carousel-item .banner-info {
@@ -390,4 +393,63 @@ footer .container .footer p {
 }
 footer .container .footer p i {
   color: red;
+}
+
+#add-product {
+  padding-top: 130px;
+}
+#add-product .add-product-head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -64px;
+  margin-bottom: 30px;
+}
+#add-product .add-product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#add-product .add-product form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+#add-product .add-product form input {
+  color: #497011;
+  outline: none;
+  width: 330px;
+  height: 40px;
+  border: 1px solid #7cbd1e;
+  padding: 0 10px;
+  border-radius: 10px;
+}
+#add-product .add-product form input::-moz-placeholder {
+  color: #7cbd1e;
+}
+#add-product .add-product form input::placeholder {
+  color: #7cbd1e;
+}
+#add-product .add-product form button {
+  height: 40px;
+  width: 100px;
+  border: none;
+}
+#add-product .add-product form .green {
+  background-color: #7cbd1e;
+  color: white;
+  border-radius: 7px;
+}
+#add-product .add-product form .green:hover {
+  background-color: #497011;
+}
+#add-product .add-product .error-message {
+  margin: 2rem 0;
+  font-size: 2rem;
+  color: red;
+  opacity: 0;
+  transition: all 1s;
 }/*# sourceMappingURL=style.css.map */
