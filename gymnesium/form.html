@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.5/axios.min.js"
+      integrity="sha512-TjBzDQIDnc6pWyeM1bhMnDxtWH0QpOXMcVooglXrali/Tj7W569/wd4E8EDjk1CwOAOPSJon1VfcEt1BI4xIrA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script defer src="./assets/js/form.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-top">
+          <p>
+            We believe we helps people <br />
+            for happier lives
+          </p>
+          <img
+            src="https://preview.colorlib.com/theme/gym/img/logo.png"
+            alt=""
+          />
+          <div class="phone">
+            <p>+880 123 12 658 439</p>
+            <div class="phon"><i class="fa-solid fa-phone"></i></div>
+          </div>
+          <div class="menu">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+
+        <div class="header-bottom">
+          <nav>
+            <ul>
+              <li>
+                <a class="active" href="./index.html">Home</a>
+              </li>
+              <li><a href="#">Trainer</a></li>
+              <li><a href="#">Plan</a></li>
+              <li><a href="#">Top Course</a></li>
+              <li><a href="./form.html">Form</a></li>
+              <li>
+                <a href="./favs.html">Favorite</a>
+                <sup class="fav-count">0</sup>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <section id="form">
+        <div class="container">
+            <div class="formhead">Form Page</div>
+            <div class="form">
+
+
+                <div class="row justify-content-center my-5">
+                    <div class="col col-6">
+                      <form >
+                        <div class="mb-3">
+                          <div class="title">
+                            <label for="comp" class="form-label">Title</label>
+                          </div>
+                          <input type="text" class="form-control" id="comp" />
+                        </div>
+                        <div class="mb-3">
+                        <div class="body">
+                            <label for="street"  class="form-label">Body</label>
+                        </div>
+                        <textarea name="" id="" cols="25" rows="5"></textarea>
+                        </div>
+                       
+                        <div class="mb-3">
+                         <div class="images">
+                            <label for="country" class="form-label">Image </label>
+                         </div>
+                          <input type="file" class="form-control" id="country" multiple/>
+                        </div>
+            
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </form>
+                    </div>
+                  </div>
+                
+            </div>
+        </div>
+    </section>
+  </body>
+</html>
