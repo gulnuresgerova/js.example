@@ -1,0 +1,306 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+}
+@media screen and (max-width: 767px) {
+  .container .container {
+    padding: 0 5%;
+  }
+}
+
+header {
+  background-color: rgb(243, 240, 240);
+  padding: 13px 0;
+}
+header .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .header .header-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+header .header .header-left .mini-hed {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 7px;
+}
+header .header .header-left .mini-hed a {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+header .header .header-left .mini-hed i {
+  color: orangered;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+header .header .header-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 7px;
+}
+header .header .header-right i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+}
+
+#selling {
+  background-color: white;
+}
+#selling .selling {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#selling .selling nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 26px;
+}
+#selling .selling nav ul li {
+  list-style: none;
+}
+#selling .selling nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+#selling .selling nav ul li a:hover {
+  color: orangered;
+}
+#selling .selling .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#selling .selling .logo h1 {
+  color: black;
+  font-weight: 90px;
+}
+#selling .selling .logo p {
+  font-size: 3.5rem;
+  color: orangered;
+  margin: 0;
+  padding: 0;
+}
+
+#shop {
+  background-image: url("https://preview.colorlib.com/theme/selling/images/hero_2.jpg");
+  background-size: cover;
+  height: 75vh;
+}
+#shop .shop-dark {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.414);
+  height: 75vh;
+}
+#shop .shop-dark .shop {
+  height: 500px;
+  width: 75vh;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  color: white;
+}
+#shop .shop-dark .shop .buttons {
+  display: flex;
+  gap: 10px;
+}
+#shop .shop-dark .shop .buttons button {
+  height: 44px;
+  width: 170px;
+  background-color: white;
+  border: 1px solid transparent;
+  color: black;
+}
+#shop .shop-dark .shop .buttons button .short {
+  width: 150px !important;
+}
+#shop .shop-dark .shop .buttons button:hover {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+#dinamic .dinamic .cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+#dinamic .dinamic .cards .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border: none;
+}
+#dinamic .dinamic .cards .card .card-name {
+  padding-top: 10px;
+}
+#dinamic .dinamic .cards .card .description {
+  margin: 10px 0;
+  padding: 0 10px;
+}
+#dinamic .dinamic .cards .card .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+#dinamic .dinamic .cards .card .buttons .black {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  text-decoration: none;
+  color: white;
+  border: none;
+  height: 30px;
+  width: 70px;
+}
+#dinamic .dinamic .cards .card .buttons .black:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border: none;
+  border: 1px solid black;
+}
+#dinamic .dinamic .cards .card .buttons .white {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border: none;
+  border: 1px solid black;
+  height: 30px;
+  width: 80px;
+}
+#dinamic .dinamic .cards .card .buttons .white:hover {
+  background-color: black;
+  color: white;
+  border: none;
+}
+#dinamic .dinamic .cards .card .icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+  gap: 20px;
+}
+#dinamic .dinamic .cards .card .icons i {
+  margin: 0;
+  padding: 0;
+  font-size: 1.2rem;
+}
+#dinamic .dinamic .cards .card .icons .fa-heart {
+  color: red;
+}
+#dinamic .dinamic .cards .card .icons .fa-eye {
+  color: blue;
+}
+#dinamic .dinamic .cards .card .icons p {
+  margin: 0;
+  padding: 0;
+  color: gray;
+}
+#dinamic .dinamic .cards .card .card-img img {
+  width: 100%;
+  transition: all 1s;
+}
+#dinamic .dinamic .cards .card .card-img img:hover {
+  transform: scale(1.1);
+}
+#dinamic .dinamic .dinamic-head {
+  margin: 17px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+}
+#dinamic .dinamic .dinamic-head .sort {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border: none;
+  border: 1px solid black;
+  height: 30px;
+  width: 80px;
+}
+#dinamic .dinamic .dinamic-head .sort:hover {
+  background-color: black;
+  color: white;
+  border: none;
+}
+#dinamic .dinamic .dinamic-head .search {
+  height: 30px;
+  width: 200px;
+  outline: none;
+  padding: 0 6px;
+}
+#dinamic .dinamic .dinamic-head em {
+  color: gray;
+}
+#dinamic .dinamic .dinamic-head p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: rgb(76, 74, 74);
+}
+#dinamic .dinamic .dinamic-head h1 {
+  color: black;
+}
+
+#details .details-head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+#details .details-head h1 {
+  font-size: 4rem;
+}
+#details .details-head .goback {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border: none;
+  border: 1px solid black;
+  height: 30px;
+  width: 80px;
+}
+#details .details-head .goback:hover {
+  background-color: black;
+  color: white;
+  border: none;
+}
+#details .details .card {
+  width: 100%;
+  padding: 30px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}/*# sourceMappingURL=style.css.map */

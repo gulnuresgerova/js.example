@@ -1,9 +1,8 @@
 let id = new URLSearchParams(window.location.search).get("id");
-
-console.log(id);
+console.log(id)
 const details = document.querySelector(".details");
 const goback = document.querySelector(".goback");
-const BASE_URL = "http://localhost:4050/gym";
+const BASE_URL = "http://localhost:4044/products"
 
 
 fetch(`${BASE_URL}/${id}`)
