@@ -1,7 +1,7 @@
 let cards = document.querySelector(".cards");
 const BASE_URL = "http://localhost:4050/gym";
 
-let wishlist = getProductsToLocalSotarge() ?? [];
+let favProducts = getFavsFromLocaleStorage();
 
 function drawCards(data) {
   cards.innerHTML = "";
@@ -18,7 +18,7 @@ function drawCards(data) {
   <h2 class="card-title">${el.title}</h2>
   <p class="card-body">${el.body}</p>
   <div class="card-icon">
-  <i class="fa-solid fa-heart" onclick=addToRemove(${el.id},this)></i>
+  <i class="fa-solid fa-heart" onclick=removeFromFavs(${el.id},this)></i>
      
   </div>
 `  
@@ -35,9 +35,9 @@ function setProductsToLocalSotarge(arr) {
     return JSON.parse(localStorage.getItem("cards"));
   }
   
-  function addToRemove(id, i) {
-    wishlist = wishlist.filter((item) => item.id !== id);
-    setProductsToLocalSotarge(wishlist);
-    i.parentElement.parentElement.remove();
-    console.log(i);
+  function removeFromFavs(id, btn) {
+    favProducts = favProducts.filter((item) => item.id !== id);
+    setFavsToLocaleStorage(favProducts);
+  
+    btn.closest(".card").remove();
   }
