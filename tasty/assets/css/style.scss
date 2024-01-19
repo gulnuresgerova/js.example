@@ -533,3 +533,52 @@ footer {
     }
   }
 }
+
+// favorite section
+
+
+#products{
+  .favshead{
+   
+      margin-top: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 30px;
+   
+  }
+  .products{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    @media screen and (max-width: 767px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .box {
+      display: flex;
+      align-items: center !important;
+      justify-content: space-between !important;
+      background-color: white;
+      gap: 10px;
+      padding: 10px 10px;
+      box-shadow: 2px 2px 10px rgb(172, 170, 170);
+
+      img {
+        height: 200px;
+        width: 200px;
+      }
+
+      &:hover {
+        background-color: rgb(186, 129, 23);
+      }
+      @media screen and (max-width: 767px) {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.fa-heart{
+  color: red;
+  font-size: 1.3rem;
+}

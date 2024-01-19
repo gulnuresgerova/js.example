@@ -9,10 +9,18 @@
       "img": "https://preview.colorlib.com/theme/tasty/images/dish-4.jpg"
     },
     {
-      "id": "3",
+      "id": "55",
       "title": "Esprit ",
       "desc": "Esprit Ruffle Shirt",
-      "price": 22.64,
+      "price": 66.64,
+      "category": "main",
+      "img": "https://preview.colorlib.com/theme/tasty/images/dish-5.jpg"
+    },
+    {
+      "id": "66",
+      "title": "Esprit ",
+      "desc": "Esprit Ruffle Shirt",
+      "price": 45.21,
       "category": "main",
       "img": "https://preview.colorlib.com/theme/tasty/images/dish-5.jpg"
     },
@@ -70,6 +78,20 @@
       "desc": "amin",
       "price": "34",
       "img": "./assets/img/about-2.jpg"
+    },
+    {
+      "id": "6ccd",
+      "title": "A",
+      "desc": "asda",
+      "price": "-10",
+      "img": "./assets/img/dessert-5.jpg"
+    },
+    {
+      "id": "73c0",
+      "title": "leyla",
+      "desc": "bag",
+      "price": "34",
+      "img": "./assets/img/dessert-5.jpg"
     }
   ]
 }
